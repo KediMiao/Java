@@ -40,4 +40,27 @@ jshell> System.out.print(firstChar + secondChar);
 jshell> System.out.print("" + firstChar + secondChar);
 AB
 
-//
+04/27/2023 continue learn Java Basic, goog news: somehow I linked VS Code with Github, and you know what, many important files on my desktop just lost.... Tear in my eyes.....^\_^....
+
+jshell> {
+...> int result = 10;
+...> result -= 5.5;
+...> System.out.print(result);}
+4
+
+jshell> {
+...> int result = 10;
+...> result = result - 5.5;
+...> System.out.print(result);}
+| Error:
+| incompatible types: possible lossy conversion from double to int
+| result = result - 5.5;
+| ^-----
+
+jshell> {
+...> int result = 10;
+...> result = (int)( result - 5.5);
+...> System.out.print(result);}
+4
+
+\*\*so x -=y is acutally means x = (x data type) (x - y);
